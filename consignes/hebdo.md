@@ -87,7 +87,7 @@ Dépendances : `pip install pillow matplotlib` si l'import échoue. Au plus 24 r
 6. `python3 outils/historique.py verifier edition.json` : changer tout sujet signalé PROCHE, sauf fait nouveau dit dans le titre.
 7. Contrôle : `python3 outils/publier.py edition.json --texte`. Compléter tout ce qu'il liste en MANQUE et relancer jusqu'à ce qu'il n'en reste aucun. Puis l'audit : `python3 .claude/skills/sans-trace-ia/scripts/audit.py edition.txt --lang fr`. Corriger dans le JSON toute alerte rouge (les alertes "de plus" dans une comparaison chiffrée sont acceptées).
 8. Relecture des faits : pour chaque chiffre, date et nom, vérifier qu'il figure dans une source lue cette semaine. Retirer ce qui n'est pas vérifiable. Vérifier que chaque bonne réponse de quiz est juste.
-9. Publication : `python3 outils/publier.py edition.json --pousser`. `--forcer` seulement si un MANQUE ne peut pas être comblé après deux essais (rubrique sans matière fiable).
+9. Publication : `python3 outils/publier.py edition.json --pousser`. `--forcer` seulement pour un MANQUE de matière (une rubrique sans assez de faits fiables cette semaine), après deux recherches supplémentaires. Jamais pour les images, la diversité des zones, le quiz ou la longueur : ceux-là se corrigent toujours. Une relance ne republie jamais l'édition en ligne telle quelle.
 10. Fin : une phrase qui donne le numéro publié, les titres des trois dossiers et ce qui manque éventuellement.
 
 ## En cas d'échec
