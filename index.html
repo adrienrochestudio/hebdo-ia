@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hebdo IA</title>
+<meta name="description" content="Hebdo IA : l'actualité de l'intelligence artificielle, ses enjeux environnementaux et sa technique, chaque semaine, avec des quiz.">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; frame-src https://ourworldindata.org; connect-src 'self' https:; style-src 'self'; script-src 'self'; font-src 'self'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" href="./icons/icon-192.png">
+<link rel="apple-touch-icon" href="./icons/icon-180.png">
+<link rel="preload" href="./fonts/source-serif-4-var.woff2" as="font" type="font/woff2" crossorigin>
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Hebdo IA">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="./styles.css">
+<script type="module" src="./app.js"></script>
+</head>
+<body>
+<div class="voile" aria-hidden="true"></div>
+<button type="button" id="ouvrir-menu" class="ouvrir-menu" aria-haspopup="dialog" aria-controls="menu" aria-label="Menu">
+  <span></span><span></span><span></span>
+</button>
+<div id="tirer" class="tirer" aria-hidden="true">
+  <span class="roue"></span>
+  <p class="note"></p>
+</div>
+<div id="maj" class="maj" hidden>
+  <span>Nouvelle version de l'app.</span>
+  <button type="button" id="maj-bouton">Recharger</button>
+</div>
+<header class="titre-journal">
+  <div class="marque">
+    <img src="./icons/logo.svg" width="34" height="34" alt="">
+    <h1>Hebdo IA</h1>
+  </div>
+  <nav class="onglets" aria-label="Rubriques">
+    <button type="button" data-vue="actualite" aria-pressed="true">Actualité</button>
+    <button type="button" data-vue="environnement" aria-pressed="false">Environnement</button>
+    <button type="button" data-vue="technique" aria-pressed="false">Technique</button>
+  </nav>
+  <p class="date" id="date"></p>
+  <p class="archive note" id="archive" hidden></p>
+</header>
+<main id="journal" class="journal" aria-live="polite">
+  <p class="note">Chargement de l'édition.</p>
+</main>
+<dialog id="menu" class="menu" aria-label="Menu">
+  <nav>
+    <button type="button" class="fermer-menu" aria-label="Fermer"><span></span><span></span></button>
+    <h2 class="menu-titre" id="menu-rubriques-titre">Dans cette rubrique</h2>
+    <ul class="menu-liste" id="menu-rubriques"></ul>
+    <h2 class="menu-titre">Éditions</h2>
+    <ul class="menu-liste" id="menu-editions"></ul>
+    <h2 class="menu-titre" id="menu-gardes-titre" hidden>Gardés</h2>
+    <ul class="menu-liste" id="menu-gardes"></ul>
+    <h2 class="menu-titre" id="menu-scores-titre" hidden>Quiz</h2>
+    <ul class="menu-liste menu-scores" id="menu-scores"></ul>
+  </nav>
+</dialog>
+<dialog id="zoom" class="zoom" aria-label="Image agrandie">
+  <button type="button" class="fermer-zoom">Fermer</button>
+  <iframe title="Graphique interactif" loading="lazy" referrerpolicy="no-referrer"
+          sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+  <img alt="">
+  <p class="note"></p>
+</dialog>
+</body>
+</html>

@@ -1,0 +1,40 @@
+// Textes de l'interface. Le contenu des éditions arrive déjà rédigé.
+
+export const RUBRIQUES = [
+  { id: "actualite", nom: "Actualité" },
+  { id: "environnement", nom: "Environnement" },
+  { id: "technique", nom: "Technique" },
+];
+
+export const T = {
+  essentiel: "L'essentiel",
+  enBref: "En bref",
+  aRetenir: "À retenir",
+  source: "Source : ",
+  sources: "Sources : ",
+  versionInteractive: "Version interactive",
+  carte: "Carte : ",
+  lireDossier: "Lire le dossier",
+  replier: "Replier",
+  quiz: "Quiz",
+  exact: "Exact.",
+  non: "Non.",
+  sur: (justes, total) => `${justes} sur ${total}`,
+  recommencer: "Recommencer le quiz",
+  garder: "Garder",
+  garde: "Gardé",
+  retirer: "retirer",
+  aucunGarde: "Aucun article gardé. Le lien Garder, en fin d'article, le range ici, lisible hors ligne.",
+  articlesGardes: "Articles gardés",
+  chargement: "Chargement de l'édition.",
+  rien: "Aucune édition disponible pour l'instant. Elle s'affichera ici dès qu'elle sera en ligne.",
+  videRubrique: "Pas d'article dans cette rubrique cette semaine.",
+  tirer: "Tirer pour actualiser",
+  relacher: "Relâcher pour actualiser",
+  actualisation: "Actualisation",
+  aJour: "Édition à jour",
+  numero: (n) => `n° ${n}`,
+  archive: "Édition d'une semaine passée.",
+  derniere: "Revenir à la dernière",
+  horsLigne: "Cette édition n'est pas enregistrée sur l'appareil. Elle s'ouvrira avec une connexion.",
+};

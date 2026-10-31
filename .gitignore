@@ -1,0 +1,8 @@
+__pycache__/
+.DS_Store
+/edition.json
+/edition.txt
+/veille/
+/veille.txt
+/_veille.json
+/_test/

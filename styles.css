@@ -1,0 +1,461 @@
+/* Référence : apps de quotidiens de qualité (New York Times, The Economist, Financial Times) :
+   titres en graisse moyenne et coupe "display", séparation par l'espace plutôt que par des filets,
+   nom de rubrique en couleur au-dessus du titre, légendes en italique.
+   Une famille : Source Serif 4 variable (OFL, axe de taille optique), embarquée pour le hors ligne.
+   Couleurs : encre, gris de note, et le bleu encre du logo pour un seul rôle, le nom des rubriques. */
+@font-face { font-family: "Source Serif 4"; src: url("./fonts/source-serif-4-var.woff2") format("woff2"); font-weight: 200 900; font-style: normal; font-display: swap; }
+@font-face { font-family: "Source Serif 4"; src: url("./fonts/source-serif-4-var-italic.woff2") format("woff2"); font-weight: 200 900; font-style: italic; font-display: swap; }
+
+:root {
+  --encre: #121212;
+  --note: #666666;
+  --fond: #ffffff;
+  --marque: #1d4257;
+  --encart: #f3f2ef;
+  --serif: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --colonne: 640px;
+  --large: 880px;
+  --marge: 20px;
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--fond);
+  -webkit-text-size-adjust: 100%;
+  overscroll-behavior-y: none;
+  scroll-padding-top: calc(16px + env(safe-area-inset-top));
+}
+
+body {
+  margin: 0;
+  min-height: 100dvh;
+  background: var(--fond);
+  color: var(--encre);
+  font-family: var(--serif);
+  font-feature-settings: "kern", "liga", "onum";
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+a { color: inherit; text-underline-offset: 2px; text-decoration-thickness: 1px; }
+a:focus-visible, button:focus-visible, summary:focus-visible, img:focus-visible {
+  outline: 2px solid var(--marque);
+  outline-offset: 3px;
+}
+
+/* Titre du journal : centré comme une manchette */
+.titre-journal {
+  max-width: calc(var(--large) + 2 * var(--marge));
+  margin: 0 auto;
+  padding: 22px var(--marge) 0;
+  text-align: center;
+}
+.marque { display: inline-flex; align-items: center; gap: 10px; }
+.marque img { display: block; width: 34px; height: 34px; }
+.marque h1 { font-size: 40px; line-height: 44px; font-weight: 640; margin: 0; letter-spacing: -0.015em; }
+.onglets {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-top: 16px;
+  border-bottom: 1px solid #e3e3e3;
+}
+.onglets button {
+  font: 16px/20px var(--serif);
+  margin-bottom: -1px;
+  color: var(--note);
+  background: none;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 12px 2px 10px;
+  min-height: 44px;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.onglets button[aria-pressed="true"] { color: var(--encre); font-weight: 600; border-bottom-color: var(--encre); }
+.onglets button.lu:not([aria-pressed="true"]) { color: #9a9a9a; }
+.archive { margin: 6px 0 0; }
+.archive button { font: inherit; color: var(--marque); background: none; border: 0; padding: 8px 2px; min-height: 44px; text-decoration: underline; text-underline-offset: 2px; cursor: pointer; }
+.date { font-size: 13px; line-height: 19px; color: var(--note); margin: 14px 0 0; }
+
+.journal {
+  max-width: calc(var(--colonne) + 2 * var(--marge));
+  margin: 0 auto;
+  padding: 8px var(--marge) 56px;
+}
+
+/* Tailles : titre 31, sous-titre 19, texte 18, note 13 (titre 27 et texte 17 sur téléphone).
+   Graisses : titres 540 en coupe display, intertitres 600, texte 400. Pas de gras lourd. */
+.titre { font-size: 31px; line-height: 37px; font-weight: 540; margin: 0; letter-spacing: -0.01em; }
+.sous-titre { font-size: 19px; line-height: 26px; font-weight: 600; margin: 28px 0 6px; }
+.texte {
+  font-size: 18px; line-height: 30px; margin: 0 0 15px;
+  /* Coupure des mots : seulement les mots longs, jamais deux lignes coupées de suite. */
+  hyphens: auto; -webkit-hyphens: auto;
+  hyphenate-limit-chars: 8 4 4; -webkit-hyphenate-limit-before: 4; -webkit-hyphenate-limit-after: 4;
+  -webkit-hyphenate-limit-lines: 1;
+}
+.note { font-size: 13px; line-height: 19px; color: var(--note); margin: 0; font-weight: 400; }
+.note a { color: var(--note); }
+figcaption.note, .chapo { font-style: italic; }
+.rubrique-nom { font-size: 14px; line-height: 20px; color: var(--marque); margin: 0 0 8px; font-weight: 600; }
+
+/* Encarts sur fond grisé : l'Actu, le chiffre du jour, le quiz. Angles droits, sans filet ni ombre. */
+.encart {
+  background: var(--encart);
+  padding: 26px 24px;
+}
+@media (max-width: 560px) {
+  .encart { margin-left: calc(-1 * var(--marge)); margin-right: calc(-1 * var(--marge)); padding: 24px var(--marge); }
+}
+.rubrique .chiffre-titre { font-size: 44px; line-height: 48px; padding-bottom: 14px; }
+@media (min-width: 960px) { .rubrique .chiffre-titre { font-size: 54px; line-height: 58px; } }
+.quiz-historique { padding-top: 4px; }
+.quiz-historique .note + .note { margin-top: 4px; }
+
+/* Actu du moment */
+.une { margin-top: 30px; }
+.une-texte { font-size: 22px; line-height: 33px; margin: 0 0 10px; font-weight: 400; }
+
+/* Rubriques du jour */
+.rubrique { padding-top: 64px; }
+.rubrique > .titre { padding-bottom: 20px; }
+.rubrique > .chapo { margin-top: -6px; padding-bottom: 8px; }
+.dossier-bloc { padding-top: 48px; }
+.dossier-bloc .dossier summary { padding-top: 0; }
+.liste { padding-left: 14px; margin-bottom: 8px; }
+.sources { padding-top: 10px; }
+
+/* Figures */
+figure { margin: 8px 0 24px; }
+figure img { display: block; width: 100%; height: auto; cursor: zoom-in; }
+figcaption { padding-top: 8px; }
+figure.carte img { max-width: 100%; border: 1px solid #e2e2e2; }
+figure.photo:not(.large) img { max-width: 360px; }
+figure.portrait img { max-width: 170px; }
+
+.duo { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 8px 0 24px; align-items: start; }
+.duo figure { margin: 0; }
+.duo figure img { max-width: none; }
+
+.schema { margin: 10px 0 26px; }
+.schema .boite {
+  border: 1px solid var(--encre);
+  padding: 11px 14px;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+.schema .fleche { text-align: center; padding: 6px 0; font-style: italic; }
+
+/* Glossaire */
+.definitions { margin: 0 0 15px; }
+.definitions dt { font-size: 18px; line-height: 26px; font-weight: 600; margin-top: 14px; }
+.definitions dd { margin: 2px 0 0; }
+
+/* Brèves */
+.breves { padding-top: 72px; }
+.breves > .titre { padding-bottom: 6px; }
+.breve { padding: 22px 0 0; }
+.breve .rubrique-nom { margin-bottom: 6px; }
+.breve .texte { font-size: 17px; line-height: 27px; margin-bottom: 10px; }
+
+/* Édition de la semaine : dossiers repliés, chacun représenté par son image */
+.semaine-entete { padding: 36px 0 8px; }
+.dossier + .dossier { margin-top: 12px; }
+.dossier summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  padding: 24px 0;
+}
+.dossier summary::-webkit-details-marker { display: none; }
+.dossier .couverture {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  background: #ececec;
+}
+.dossier-entete .titre { padding-bottom: 10px; }
+.chapo { font-size: 18px; line-height: 28px; margin: 0 0 10px; }
+.ouvrir { text-decoration: underline; }
+.dossier[open] .ouvrir { text-decoration: none; }
+.dossier-corps { padding-bottom: 10px; }
+.dossier-corps > figcaption { padding: 0 0 18px; }
+.dossier-corps { padding-bottom: 28px; }
+
+.pied { padding-top: 64px; }
+
+/* Garder un article : lien discret en fin de rubrique */
+.actions { padding-top: 8px; }
+.action-garder {
+  font: inherit;
+  color: var(--note);
+  background: none;
+  border: 0;
+  padding: 10px 0;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  cursor: pointer;
+}
+.vide { padding-top: 28px; }
+
+/* Quiz de fin d'édition */
+.quiz { margin-top: 72px; }
+.quiz > .titre { padding-bottom: 6px; }
+.question { padding-top: 26px; }
+.question-texte { font-weight: 600; margin-bottom: 8px; }
+.choix { border-top: 1px solid #e3e3e3; }
+.choix-bouton {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  padding: 11px 0;
+  border: 0;
+  border-bottom: 1px solid #e3e3e3;
+  background: none;
+  text-align: left;
+  font: 17px/25px var(--serif);
+  color: var(--encre);
+  cursor: pointer;
+}
+.choix-bouton:disabled { cursor: default; color: var(--note); }
+.choix-bouton.juste { color: var(--marque); font-weight: 600; }
+.choix-bouton.faux { color: var(--encre); text-decoration: line-through; }
+.reponse .texte { margin: 12px 0 0; }
+.quiz-score { padding-top: 22px; }
+.pied .note + .note { margin-top: 6px; }
+
+/* Image agrandie */
+.zoom {
+  border: 0;
+  padding: 16px;
+  margin: 0;
+  width: 100vw;
+  height: 100dvh;
+  max-width: none;
+  max-height: none;
+  background: var(--fond);
+  overflow: auto;
+}
+.zoom::backdrop { background: var(--fond); }
+.zoom img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100dvh - 120px);
+  margin: max(env(safe-area-inset-top), 24px) auto 12px;
+  object-fit: contain;
+  cursor: zoom-out;
+}
+.zoom p { max-width: var(--colonne); margin: 0 auto; font-style: italic; }
+.zoom iframe { display: none; width: 100%; height: calc(100dvh - 150px); border: 0; margin-top: max(env(safe-area-inset-top), 24px); }
+.zoom.interactif iframe { display: block; }
+.zoom.interactif img { display: none; }
+.fermer-zoom {
+  position: absolute;
+  top: calc(env(safe-area-inset-top) + 6px);
+  right: calc(env(safe-area-inset-right) + 8px);
+  min-height: 44px;
+  padding: 0 12px;
+  border: 0;
+  background: var(--fond);
+  font: 15px/20px var(--serif);
+  color: var(--encre);
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Voile du haut (téléphone) : sous l'heure et la batterie, fond plein, puis fondu sur 24 px :
+   le texte qui défile s'efface au lieu de passer sous les indicateurs. */
+.voile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  height: env(safe-area-inset-top, 0px);
+  background: var(--fond);
+  pointer-events: none;
+}
+.voile::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 24px;
+  background: linear-gradient(to bottom, #ffffff, rgb(255 255 255 / 0));
+}
+@media (min-width: 960px) { .voile::after { display: none; } }
+
+/* Bouton du menu : trois traits, toujours accessible en haut à gauche */
+.ouvrir-menu, .fermer-menu {
+  position: fixed;
+  z-index: 4;
+  top: calc(env(safe-area-inset-top) + 6px);
+  left: calc(env(safe-area-inset-left) + 6px);
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 22px;
+  background: var(--fond);
+  cursor: pointer;
+  transition: opacity 0.2s ease, translate 0.2s ease;
+  display: grid;
+  place-content: center;
+  gap: 5px;
+}
+/* Masqué pendant la lecture (défilement vers le bas), revient dès qu'on remonte. */
+.ouvrir-menu.cache { opacity: 0; translate: 0 -12px; pointer-events: none; }
+.ouvrir-menu span, .fermer-menu span { display: block; width: 18px; height: 1.5px; background: var(--encre); }
+.fermer-menu { position: absolute; background: none; }
+.fermer-menu span { position: absolute; left: 13px; top: 21px; }
+.fermer-menu span:first-child { transform: rotate(45deg); }
+.fermer-menu span:last-child { transform: rotate(-45deg); }
+
+/* Menu latéral */
+.menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  width: min(300px, 84vw);
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  background: var(--fond);
+  color: var(--encre);
+  box-shadow: 1px 0 0 #e3e3e3;
+  translate: -100% 0;
+  transition: translate 0.22s ease, overlay 0.22s allow-discrete, display 0.22s allow-discrete;
+}
+.menu[open] { translate: 0 0; }
+@starting-style { .menu[open] { translate: -100% 0; } }
+.menu::backdrop { background: rgb(18 18 18 / 0.18); }
+.menu nav {
+  position: relative;
+  height: 100%;
+  overflow-y: auto;
+  padding: calc(env(safe-area-inset-top) + 64px) 0 calc(env(safe-area-inset-bottom) + 24px) env(safe-area-inset-left);
+}
+.menu-titre { font-size: 13px; line-height: 19px; font-weight: 400; color: var(--note); margin: 22px 24px 4px; }
+.menu-titre:first-of-type { margin-top: 0; }
+.menu-liste { list-style: none; margin: 0; padding: 0; }
+.menu-liste button {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 24px;
+  border: 0;
+  background: none;
+  text-align: left;
+  font: 18px/24px var(--serif);
+  color: var(--encre);
+  cursor: pointer;
+}
+.menu-liste button.lu { color: var(--note); }
+.menu-liste button[aria-current="true"] { color: var(--marque); font-weight: 600; }
+.menu-scores li { padding: 6px 24px; }
+@media (prefers-reduced-motion: reduce) { .menu { transition: none; } }
+
+/* Tirer pour actualiser : la page descend avec le doigt et découvre la roue au-dessus d'elle,
+   qui tourne pendant le chargement. Rien ne se superpose au titre. */
+.titre-journal, .journal {
+  transform: translateY(var(--decalage, 0px));
+  transition: transform 0.22s ease;
+}
+html.glisse .titre-journal, html.glisse .journal { transition: none; }
+.tirer {
+  position: fixed;
+  z-index: 2;
+  top: calc(env(safe-area-inset-top, 0px) + 12px);
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+}
+.tirer.visible { opacity: 1; }
+.roue { display: block; width: 26px; height: 26px; border-radius: 50%; border: 2px solid #d5dde2; border-top-color: var(--marque); }
+.tirer.tourne .roue { animation: tourner 0.8s linear infinite; }
+@keyframes tourner { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .titre-journal, .journal { transition: none; } }
+
+/* Bandeau de mise à jour */
+.maj {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 10px var(--marge);
+  background: var(--encre);
+  color: var(--fond);
+  font-size: 15px;
+}
+.maj[hidden] { display: none; }
+.maj button {
+  font: inherit;
+  color: var(--fond);
+  background: none;
+  border: 1px solid var(--fond);
+  padding: 8px 14px;
+  min-height: 44px;
+  cursor: pointer;
+}
+
+/* Téléphone : manchette plus petite, images bord à bord, duo empilé */
+@media (max-width: 560px) {
+  :root { --marge: 18px; }
+  .marque h1 { font-size: 34px; line-height: 38px; }
+  .onglets { gap: 20px; }
+  .onglets button { font-size: 15px; }
+  .titre { font-size: 27px; line-height: 33px; }
+  .texte { font-size: 17px; line-height: 28px; }
+  .une-texte { font-size: 19px; line-height: 29px; }
+  figure.large, .dossier .couverture {
+    margin-left: calc(-1 * var(--marge));
+    margin-right: calc(-1 * var(--marge));
+    width: calc(100% + 2 * var(--marge));
+  }
+  figure.large figcaption { padding-left: var(--marge); padding-right: var(--marge); }
+  .duo { grid-template-columns: 1fr; }
+  figure.photo:not(.large) img { max-width: 100%; }
+}
+
+/* Ordinateur : modèle "colonne centrée" (app Le Monde). Une seule colonne de lecture centrée,
+   images à la largeur du texte, graphiques larges un peu plus larges que la colonne. */
+@media (min-width: 960px) {
+  :root { --colonne: 680px; --large: 920px; }
+  .titre-journal { padding-top: 40px; }
+  .marque h1 { font-size: 54px; line-height: 58px; }
+  .texte { font-size: 19px; line-height: 31px; }
+  .une-texte { font-size: 23px; line-height: 35px; }
+  .rubrique { padding-top: 80px; }
+  .rubrique > .titre { font-size: 36px; line-height: 42px; }
+  figure.carte img { max-width: 100%; }
+  figure.photo:not(.large) img { max-width: 420px; }
+  figure.portrait img { max-width: 200px; }
+  .duo figure.photo img { max-width: 100%; }
+  figure.large {
+    margin-left: calc((var(--colonne) - var(--large)) / 2);
+    margin-right: calc((var(--colonne) - var(--large)) / 2);
+  }
+  .breve .texte { font-size: 18px; line-height: 29px; }
+  .dossier summary { grid-template-columns: 320px 1fr; gap: 28px; align-items: start; }
+  .dossier .couverture { aspect-ratio: 4 / 3; }
+  .dossier-entete .titre { font-size: 32px; line-height: 38px; }
+}

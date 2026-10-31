@@ -1,0 +1,52 @@
+# Flux lus par outils/veille.py (GitHub Actions, avant la tâche du dimanche). Format : rubrique | source | url
+# Rubrique = étiquette de tri pour la rédaction. Une ligne commentée (#) est ignorée. Les flux en échec sont listés en fin de veille.
+# Quatrième colonne "ia" : flux généraliste, seuls les titres qui parlent d'IA, de puces ou de data centers sont gardés.
+Actualité | Le Monde | https://www.lemonde.fr/intelligence-artificielle/rss_full.xml
+Actualité | Next | https://next.ink/feed/
+Actualité | L'Usine Digitale | https://www.usine-digitale.fr/rss
+Actualité | The Verge AI | https://www.theverge.com/rss/ai-artificial-intelligence/index.xml
+Actualité | MIT Technology Review | https://www.technologyreview.com/topic/artificial-intelligence/feed
+Actualité | Ars Technica AI | https://arstechnica.com/ai/feed/
+Actualité | TechCrunch AI | https://techcrunch.com/category/artificial-intelligence/feed/
+Actualité | The Decoder | https://the-decoder.com/feed/
+Actualité | Rest of World | https://restofworld.org/feed/latest/ | ia
+Laboratoires | OpenAI | https://openai.com/news/rss.xml
+Laboratoires | Mistral AI | https://mistral.ai/news/rss
+Laboratoires | Google AI | https://blog.google/technology/ai/rss/
+Laboratoires | Hugging Face | https://huggingface.co/blog/feed.xml
+Laboratoires | NVIDIA | https://blogs.nvidia.com/feed/ | ia
+Chine et Asie | SCMP Tech | https://www.scmp.com/rss/36/feed | ia
+Chine et Asie | TechNode | https://technode.com/feed/
+Chine et Asie | Pandaily | https://pandaily.com/feed/
+Europe | AlgorithmWatch | https://algorithmwatch.org/en/feed/
+Europe | The Register AI | https://www.theregister.com/software/ai_ml/headlines.atom
+Europe | Sifted | https://sifted.eu/feed | ia
+Marchés et financements | Crunchbase News AI | https://news.crunchbase.com/sections/ai/feed/ | ia
+Marchés et financements | SemiAnalysis | https://semianalysis.com/feed/
+Environnement | Carbon Brief | https://www.carbonbrief.org/feed | ia
+Environnement | Data Center Dynamics | https://www.datacenterdynamics.com/en/rss/
+Environnement | Data Center Knowledge | https://www.datacenterknowledge.com/rss.xml
+Environnement | Le Monde Planète | https://www.lemonde.fr/planete/rss_full.xml | ia
+Environnement | Reporterre | https://reporterre.net/spip.php?page=backend | ia
+Environnement | Inside Climate News | https://insideclimatenews.org/feed/ | ia
+Environnement | Grist | https://grist.org/feed/ | ia
+Environnement | Canary Media | https://www.canarymedia.com/rss.rss | ia
+Environnement | Mining.com | https://www.mining.com/feed/ | ia
+Technique | Simon Willison | https://simonwillison.net/atom/everything/
+Technique | Import AI | https://importai.substack.com/feed
+Technique | Interconnects | https://www.interconnects.ai/feed
+Technique | Sebastian Raschka | https://magazine.sebastianraschka.com/feed
+Technique | IEEE Spectrum AI | https://spectrum.ieee.org/feeds/topic/artificial-intelligence.rss
+Infrastructure | The Next Platform | https://www.nextplatform.com/feed/ | ia
+Infrastructure | ServeTheHome | https://www.servethehome.com/feed/ | ia
+Infrastructure | Chips and Cheese | https://chipsandcheese.com/feed/
+Métiers de l'image | befores & afters | https://beforesandafters.com/feed/ | ia
+Métiers de l'image | fxguide | https://www.fxguide.com/feed/ | ia
+Métiers de l'image | Cartoon Brew | https://www.cartoonbrew.com/feed | ia
+Métiers de l'image | Animation Magazine | https://www.animationmagazine.net/feed/ | ia
+Métiers de l'image | CG Channel | https://www.cgchannel.com/feed/ | ia
+Métiers de l'image | No Film School | https://nofilmschool.com/rss.xml | ia
+Autres métiers | Artificial Lawyer | https://www.artificiallawyer.com/feed/ | ia
+Autres métiers | Finextra | https://www.finextra.com/rss/headlines.aspx | ia
+Autres métiers | Nieman Lab | https://www.niemanlab.org/feed/ | ia
+Autres métiers | STAT | https://www.statnews.com/feed/ | ia

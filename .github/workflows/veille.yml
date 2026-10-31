@@ -1,0 +1,31 @@
+name: Veille
+# Le réseau de la tâche planifiée Claude bloque les sites de presse : la veille (flux RSS des 7 derniers jours)
+# tourne ici le dimanche avant la tâche (8h52 à Paris) et sa sortie est publiée sur la branche `veille`
+# (un seul commit, réécrit à chaque passage).
+on:
+  schedule:
+    - cron: "5 5 * * 0"   # 6h05 à Paris en hiver, 7h05 en été
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: veille
+  cancel-in-progress: true
+jobs:
+  veille:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Veille
+        run: |
+          mkdir -p sortie
+          python3 outils/veille.py --liens sortie/liens.json > sortie/veille.txt
+          tail -1 sortie/veille.txt
+      - name: Publier sur la branche veille
+        working-directory: sortie
+        run: |
+          git init -q -b veille
+          git add -A
+          git -c user.name="Hebdo IA" -c user.email="adrien.etks@gmail.com" commit -q -m "Veille du $(TZ=Europe/Paris date +%F)"
+          git push -q --force "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" veille:veille
