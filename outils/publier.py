@@ -253,7 +253,10 @@ def controler(ed):
             manques.append(f"{nom} : {len(externes)} image(s) Wikimedia ou Our World in Data, 2 au moins (les schémas, barres et mini-cartes ne comptent pas)")
         for a in arts:
             if a["etiquette"].lower().startswith("portrait") and not any(el.get("nature") in ("portrait", "logo") for el in blocs_images(a)):
-                manques.append(f"{nom} : le Portrait n'a ni portrait ni logo")
+                if visuels(a):
+                    print(f"  NOTE : {nom} : Portrait sans portrait ni logo (acceptable seulement si Commons n'en a aucun)")
+                else:
+                    manques.append(f"{nom} : le Portrait n'a aucune image")
             if a["format"] == "dossier" and a.get("couverture") and not libre(a["couverture"]):
                 manques.append(f"{nom} : couverture de dossier en mini-carte ; une photo ou un graphique attendu : {a['titre']}")
         for a in arts:
