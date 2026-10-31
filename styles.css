@@ -182,6 +182,7 @@ figure.portrait img { max-width: 170px; }
   object-fit: cover;
   background: #ececec;
 }
+.dossier .couverture-carte { object-fit: contain; background: #ffffff; border: 1px solid #e2e2e2; }
 .dossier-entete .titre { padding-bottom: 10px; }
 .chapo { font-size: 18px; line-height: 28px; margin: 0 0 10px; }
 .ouvrir { text-decoration: underline; }

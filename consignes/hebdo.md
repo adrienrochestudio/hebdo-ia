@@ -16,7 +16,7 @@ Fichiers : schéma du JSON en tête de `outils/publier.py` ; règles d'écriture
 L'industrie de l'IA dans le monde : entreprises, modèles, argent, puces, États, régulation, usages.
 
 - `une` : l'information la plus importante de la semaine, en 3 ou 4 lignes factuelles.
-- 4 articles `Fait de la semaine · <zone>` (zones : États-Unis, Chine, Europe, France, Inde, Golfe, Asie, Afrique, Amérique latine, Monde), 250 à 450 mots chacun. Au plus deux sur les États-Unis ; au moins un sur la Chine ou l'Asie et un sur l'Europe ou la France. Au plus un sur une annonce de modèle.
+- 4 articles `Fait de la semaine · <zone>` (zones : États-Unis, Chine, Europe, France, Inde, Golfe, Asie, Afrique, Amérique latine, Monde), 250 à 450 mots chacun. Au plus deux sur les États-Unis et au plus un sur OpenAI, Anthropic, Google, Meta ou Microsoft (les autres acteurs américains d'abord : puces, nuages, startups, États, syndicats) ; au moins un sur la Chine, un sur l'Europe ou la France, et un sur une autre zone (Inde, Golfe, Asie hors Chine, Afrique, Amérique latine). Au plus un sur une annonce de modèle.
 - 1 `Portrait` : une entreprise, un laboratoire ou une personne importante mais peu médiatisée (pas Altman, Musk, Huang, Amodei, Zuckerberg), 400 à 600 mots, avec portrait ou logo.
 - 1 `Le chiffre` (format `chiffre`) : le titre est le chiffre lui-même ; 120 à 250 mots qui expliquent l'ordre de grandeur et la comparaison qui le rend lisible.
 - 1 `Dossier` (format `dossier`) : 1 200 à 1 800 mots, en 4 à 6 parties, sur une question de fond liée à un fait de la semaine (un modèle économique, un rapport de force, une chaîne d'approvisionnement, une loi).
@@ -59,7 +59,8 @@ Viser au moins 70 % d'articles illustrés (contrôlé), avec des images qui appr
 - Portraits et logos des personnes et organisations peu connues : Wikimedia Commons, `"largeur": 360` (portrait) ou `240` (logo), souvent dans un `duo`.
 - Photos Wikimedia Commons d'un data center, d'une puce, d'une mine, d'un site, en pleine largeur.
 - Mini-cartes (`carte`) pour chaque lieu peu connu (site de data center, mine, usine, ville) ; `"pays"` en nom Natural Earth si la ville est près d'une frontière.
-- Couverture des dossiers : une image qui représente le sujet (photo, graphique ou mini-carte), jamais décorative.
+- Couverture des dossiers : une photo Wikimedia Commons ou un graphique Our World in Data qui représente le sujet, jamais décorative et jamais une mini-carte (elle serait recadrée).
+- Au moins 2 images Wikimedia ou Our World in Data par rubrique (contrôlé) : schémas, barres et mini-cartes ne suffisent pas à illustrer une édition. Le Portrait porte un portrait ou un logo (contrôlé).
 - Wikimedia Commons, avec WebFetch : `https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=NOM&srnamespace=6&srlimit=5&format=json`, puis `https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=1100&format=json&titles=File:...` ; utiliser `thumburl` (`iiurlwidth=500` pour un portrait ou un logo), créditer auteur et licence dans `credit`.
 - Légendes : dire ce qu'il faut regarder (la courbe, l'écart, la zone), pas seulement ce que c'est.
 

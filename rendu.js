@@ -194,7 +194,7 @@ function dossier(a, id, cle, options, nom) {
   const resume = el("summary");
   if (a.couverture) {
     const c = image(a.couverture, { zoom: false });
-    c.className = "couverture";
+    c.className = a.couverture.type === "carte" || a.couverture.ville ? "couverture couverture-carte" : "couverture";
     c.alt = "";
     c.addEventListener("error", () => c.remove(), { once: true });
     resume.append(c);

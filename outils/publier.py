@@ -224,6 +224,14 @@ def controler(ed):
         for e in att["etiquettes"]:
             if not any(x.startswith(e.lower()) for x in etiquettes):
                 manques.append(f"{nom} : pas d'article « {e} »")
+        if r["id"] == "actualite":
+            grands = re.compile(r"\b(openai|anthropic|google|alphabet|meta|microsoft|chatgpt|claude|gemini)\b", re.I)
+            faits = [a for a in arts if a["etiquette"].lower().startswith("fait de la semaine")]
+            if sum(bool(grands.search(a["titre"])) for a in faits) > 1:
+                manques.append("Actualité : plus d'un Fait de la semaine sur OpenAI, Anthropic, Google, Meta ou Microsoft")
+            if not any(re.search(r"inde|golfe|afrique|amérique latine|asie|japon|corée|monde", a["etiquette"], re.I)
+                       for a in faits):
+                manques.append("Actualité : aucun Fait de la semaine hors États-Unis, Europe et Chine")
         if r["id"] == "technique" and sum(x.startswith("métier") for x in etiquettes) < 2:
             manques.append("Technique : deux articles « Métier » attendus")
         if r["id"] == "technique" and not any(b.get("type") == "schema" for a in arts for b in a["blocs"]):
@@ -233,6 +241,14 @@ def controler(ed):
         if illustrables and len(illustres) / len(illustrables) < ILLUSTRES:
             sans = ", ".join(a["etiquette"] for a in illustrables if not visuels(a))
             manques.append(f"{nom} : {len(illustres)}/{len(illustrables)} articles illustrés, 70 % attendus (sans : {sans})")
+        externes = [el for a in arts for el in blocs_images(a) if el.get("url")] + ([r["une"]["image"]] if (r.get("une") or {}).get("image") else [])
+        if len(externes) < 2:
+            manques.append(f"{nom} : {len(externes)} image(s) Wikimedia ou Our World in Data, 2 au moins (les schémas, barres et mini-cartes ne comptent pas)")
+        for a in arts:
+            if a["etiquette"].lower().startswith("portrait") and not any(el.get("nature") in ("portrait", "logo") for el in blocs_images(a)):
+                manques.append(f"{nom} : le Portrait n'a ni portrait ni logo")
+            if a["format"] == "dossier" and a.get("couverture") and not a["couverture"].get("url"):
+                manques.append(f"{nom} : couverture de dossier en mini-carte ; une photo ou un graphique attendu : {a['titre']}")
         for a in arts:
             m = mots_corps(a)
             total_mots += m
