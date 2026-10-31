@@ -50,3 +50,10 @@ Autres métiers | Artificial Lawyer | https://www.artificiallawyer.com/feed/ | i
 Autres métiers | Finextra | https://www.finextra.com/rss/headlines.aspx | ia
 Autres métiers | Nieman Lab | https://www.niemanlab.org/feed/ | ia
 Autres métiers | STAT | https://www.statnews.com/feed/ | ia
+Voix | Gary Marcus | https://garymarcus.substack.com/feed
+Voix | Ethan Mollick | https://www.oneusefulthing.org/feed
+Voix | Narayanan et Kapoor | https://www.normaltech.ai/feed
+Voix | Rodney Brooks | https://rodneybrooks.com/feed/
+Voix | ChinAI (Jeffrey Ding) | https://chinai.substack.com/feed
+Voix | Epoch AI | https://epoch.ai/atom.xml
+Voix | Andrej Karpathy | https://karpathy.bearblog.dev/feed/

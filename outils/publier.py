@@ -19,7 +19,7 @@ Schéma de edition.json (textes en texte brut, jamais de HTML ni de markdown) :
      "une": {"texte": "3 ou 4 lignes", "image": {facultative, comme un bloc image}, "sources": [{"titre": "...", "url": "..."}]},
      "articles": [
        {"format": "article" | "chiffre" | "dossier",
-        "etiquette": "Fait de la semaine · Chine",   (voir consignes/hebdo.md)
+        "etiquette": "Fait de la semaine · Chine",   (voir consignes/hebdo.md ; "La voix de la semaine · Yann LeCun")
         "titre": "...", "chapo": "facultatif, obligatoire pour un dossier",
         "couverture": {bloc image ou carte, obligatoire pour un dossier},
         "blocs": [
@@ -82,7 +82,7 @@ PARIS = dt.timezone(dt.timedelta(hours=1))
 
 # Ce que chaque rubrique doit contenir (vérifié comme MANQUES). Étiquettes : début du champ "etiquette".
 ATTENDU = {
-    "actualite": {"une": True, "articles": 7, "etiquettes": ["Fait de la semaine", "Portrait", "Le chiffre", "Dossier"]},
+    "actualite": {"une": True, "articles": 8, "etiquettes": ["La voix de la semaine", "Fait de la semaine", "Portrait", "Le chiffre", "Dossier"]},
     "environnement": {"une": True, "articles": 6, "etiquettes": ["Fait de la semaine", "Angle mort", "Le chiffre", "Dossier"]},
     "technique": {"une": False, "articles": 6, "etiquettes": ["Mécanisme", "Infrastructure", "Métier", "Outil", "Glossaire"]},
 }
@@ -232,6 +232,8 @@ def controler(ed):
             if not any(x.startswith(e.lower()) for x in etiquettes):
                 manques.append(f"{nom} : pas d'article « {e} »")
         if r["id"] == "actualite":
+            if arts and not arts[0]["etiquette"].lower().startswith("la voix de la semaine"):
+                manques.append("Actualité : La voix de la semaine doit être le premier article (juste après L'essentiel)")
             grands = re.compile(r"\b(openai|anthropic|google|alphabet|meta|microsoft|chatgpt|claude|gemini)\b", re.I)
             faits = [a for a in arts if a["etiquette"].lower().startswith("fait de la semaine")]
             if sum(bool(grands.search(a["titre"])) for a in faits) > 1:

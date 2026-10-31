@@ -1,0 +1,34 @@
+# La voix de la semaine : les 30 personnes suivies. Format : nom | domaine | pourquoi la suivre
+# Choisie chaque semaine : une personne de la liste qui a publié, dit ou présenté quelque chose de nouveau dans les 14 derniers jours
+# (article de recherche, billet, entretien, conférence, audition). Pas la même personne deux fois en 10 éditions (historique.py notions).
+# Adrien modifie cette liste à la main : ajouter, retirer, remplacer une ligne.
+Yann LeCun | apprentissage profond | prix Turing ; tient depuis des années que les grands modèles de langage ne mènent pas seuls à une intelligence générale et défend les modèles du monde
+Geoffrey Hinton | réseaux de neurones | prix Turing et Nobel de physique 2024 ; alerte sur les risques après avoir quitté Google pour en parler librement
+Yoshua Bengio | apprentissage profond, sûreté | prix Turing ; préside le rapport scientifique international sur la sûreté de l'IA
+Fei-Fei Li | vision par ordinateur | à l'origine d'ImageNet ; défend une IA centrée sur l'humain et l'intelligence spatiale
+Andrej Karpathy | modèles de langage, pédagogie | ancien de Tesla et d'OpenAI, explique le fonctionnement des modèles mieux que quiconque ; a nommé le « vibe coding »
+François Chollet | mesure de l'intelligence | créateur de Keras et du test ARC-AGI, qui montre ce que les modèles ne savent pas faire
+Melanie Mitchell | raisonnement, analogie | Santa Fe Institute ; teste rigoureusement ce que les modèles comprennent vraiment
+Gary Marcus | sciences cognitives | critique constant des grands modèles de langage ; a annoncé tôt les limites des hallucinations et du passage à l'échelle
+Timnit Gebru | éthique, biais | fondatrice de DAIR ; coautrice de l'article « Stochastic Parrots »
+Emily M. Bender | linguistique informatique | coautrice de « Stochastic Parrots » ; démonte le vocabulaire qui prête de la pensée aux modèles
+Kate Crawford | économie politique de l'IA | autrice d'« Atlas of AI », sur les coûts matériels, humains et environnementaux
+Sasha Luccioni | climat et IA | chercheuse chez Hugging Face ; mesure l'énergie et le carbone des modèles (AI Energy Score)
+Alex de Vries-Gao | énergie numérique | Digiconomist ; a estimé parmi les premiers la consommation électrique de l'IA, après celle du bitcoin
+Shaolei Ren | eau et IA | université de Californie à Riverside ; a chiffré l'eau consommée par l'entraînement et l'usage des modèles
+Arvind Narayanan | informatique et société | Princeton ; coauteur d'« AI Snake Oil », sépare ce qui marche de ce qui est vendu
+Daron Acemoglu | économie | MIT, Nobel d'économie 2024 ; chiffre des gains de productivité de l'IA bien plus faibles que les promesses
+Erik Brynjolfsson | économie numérique | Stanford ; mesure les effets de l'IA sur le travail et la productivité
+Ethan Mollick | usages en entreprise | Wharton ; teste les outils sur des tâches réelles et publie des études sur leurs effets
+Stuart Russell | sûreté de l'IA | Berkeley ; auteur du manuel de référence et de « Human Compatible »
+Rodney Brooks | robotique | fondateur d'iRobot ; publie chaque année le bilan chiffré de ses prédictions datées
+Simon Willison | pratique des modèles | développeur ; teste chaque nouveauté et a nommé l'« injection de prompt »
+Dylan Patel | puces et data centers | SemiAnalysis ; analyse la chaîne des semi-conducteurs et le coût du calcul
+Nathan Lambert | entraînement des modèles | Interconnects ; explique l'apprentissage par renforcement et les modèles ouverts
+Jaime Sevilla | données sur l'IA | dirige Epoch AI, qui mesure le calcul, les données et les coûts d'entraînement
+Kai-Fu Lee | IA en Chine | auteur d'« AI Superpowers » ; regard sur la course entre la Chine et les États-Unis
+Jeffrey Ding | politique chinoise de l'IA | newsletter ChinAI ; traduit et analyse les sources chinoises
+Meredith Whittaker | pouvoir et surveillance | présidente de la fondation Signal ; analyse la concentration de l'IA chez quelques entreprises
+Luc Julia | ingénierie, regard critique | cocréateur de Siri ; auteur de « L'intelligence artificielle n'existe pas »
+Laurence Devillers | éthique, interaction humain-machine | CNRS et Sorbonne ; travaille sur les machines qui simulent les émotions
+Abeba Birhane | données et sociétés | audite les grandes bases d'entraînement ; regard depuis l'Afrique et l'Europe

@@ -100,7 +100,7 @@ def notions():
         print("Aucune édition précédente.")
         return
     print("Sujets des 12 dernières éditions (ne pas refaire ; un suivi est possible s'il y a un fait nouveau) :")
-    metiers, mecanismes = [], []
+    metiers, mecanismes, voix = [], [], []
     for ed in eds:
         print(f"\n## n° {ed.get('numero')} · {ed.get('date')}")
         for r in ed.get("rubriques", []):
@@ -109,10 +109,14 @@ def notions():
                 print(f"- {r['id']} · {et} · {a.get('titre', '')}")
                 if et.lower().startswith("métier"):
                     metiers.append(f"{et.split('·', 1)[-1].strip()} ({ed.get('date')})")
+                if et.lower().startswith("la voix"):
+                    voix.append(f"{et.split('·', 1)[-1].strip()} ({ed.get('date')})")
                 if et.lower().startswith(("mécanisme", "outil")):
                     mecanismes.append(f"{et} : {a.get('titre', '')}")
     if metiers:
         print("\nMétiers déjà traités, du plus récent au plus ancien : " + " ; ".join(metiers))
+    if voix:
+        print("Voix de la semaine déjà publiées (pas deux fois en 10 éditions) : " + " ; ".join(voix))
     if mecanismes:
         print("Mécanismes et outils déjà expliqués : " + " ; ".join(mecanismes))
 
