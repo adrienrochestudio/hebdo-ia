@@ -61,7 +61,10 @@ Viser au moins 70 % d'articles illustrés (contrôlé), avec des images qui appr
 - Mini-cartes (`carte`) pour chaque lieu peu connu (site de data center, mine, usine, ville) ; `"pays"` en nom Natural Earth si la ville est près d'une frontière.
 - Couverture des dossiers : une photo Wikimedia Commons ou un graphique Our World in Data qui représente le sujet, jamais décorative et jamais une mini-carte (elle serait recadrée).
 - Au moins 2 images Wikimedia ou Our World in Data par rubrique (contrôlé) : schémas, barres et mini-cartes ne suffisent pas à illustrer une édition. Le Portrait porte un portrait ou un logo (contrôlé).
-- Wikimedia Commons, avec WebFetch : `https://commons.wikimedia.org/w/api.php?action=query&list=search&srsearch=NOM&srnamespace=6&srlimit=5&format=json`, puis `https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=1100&format=json&titles=File:...` ; utiliser `thumburl` (`iiurlwidth=500` pour un portrait ou un logo), créditer auteur et licence dans `credit`.
+- Wikimedia Commons : le réseau de la tâche n'atteint pas Commons. Ne pas chercher d'adresse d'image : donner le fichier, GitHub Actions (`outils/images.py`) remplit `url` et `credit` juste après la publication et retire ce qui n'existe pas. Deux formes, à la place de `url` :
+  - `"commons": "File:Nom exact.jpg"` quand WebSearch (requête `site:commons.wikimedia.org <sujet>`) ou une page lue donne le nom exact du fichier ; c'est la forme à préférer, surtout pour un portrait ou un logo ;
+  - `"commons_recherche": "<3 à 5 mots anglais précis>"` sinon (ex. "Microsoft data center Quincy", "Huawei Ascend 910 chip", "copper mine Chuquicamata") ; le premier fichier sous licence libre est retenu, donc la requête doit nommer le sujet exact, jamais un thème vague.
+  Ne pas écrire de `credit` pour ces images. Our World in Data garde son `url` directe.
 - Légendes : dire ce qu'il faut regarder (la courbe, l'écart, la zone), pas seulement ce que c'est.
 
 ## Réseau et sources

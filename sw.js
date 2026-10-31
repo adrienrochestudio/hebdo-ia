@@ -1,6 +1,6 @@
 // Changer VERSION à chaque modification de l'app, sinon l'iPhone garde l'ancienne version.
 // Les éditions ne passent pas par VERSION : edition.js les gère (caches "index" et "edition-AAAA-MM-JJ").
-const VERSION = "2026-10-31.2";
+const VERSION = "2026-10-31.3";
 const CACHE_APP = `app-${VERSION}`;
 const FICHIERS = [
   "./",

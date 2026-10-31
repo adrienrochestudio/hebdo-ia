@@ -28,6 +28,7 @@ Schéma de edition.json (textes en texte brut, jamais de HTML ni de markdown) :
           {"type": "liste", "items": ["...", "..."]},
           {"type": "definitions", "items": [{"terme": "...", "definition": "..."}]},
           {"type": "image", "nature": "portrait|logo|donnees|photo|carte_lieu", "url": "https://...", "largeur": 1100,
+           (ou, à la place de "url" : "commons": "File:Nom exact.jpg", ou "commons_recherche": "requête", voir outils/images.py)
            "legende": "...", "lien": "https://... (version interactive)", "credit": {"titre": "...", "url": "..."}},
           {"type": "duo", "elements": [{bloc image}, {bloc carte}]},
           {"type": "carte", "ville": "Abilene", "lat": 32.45, "lon": -99.73, "pays": "United States of America", "legende": "..."},
@@ -46,7 +47,8 @@ Schéma de edition.json (textes en texte brut, jamais de HTML ni de markdown) :
 }
 Ajoutés par ce script : "date" (AAAA-MM-JJ), "numero", "publie", "nom" de chaque rubrique,
 "src" des schémas, barres et cartes (dessinés ici dans img/). Les images "url" restent distantes :
-l'app les télécharge sur l'appareil pour la lecture hors ligne.
+l'app les télécharge sur l'appareil pour la lecture hors ligne. Les images "commons" sont résolues
+après publication par GitHub Actions (outils/images.py), qui retire aussi les images introuvables.
 """
 import argparse
 import datetime as dt
@@ -163,6 +165,11 @@ def blocs_images(a):
             yield from b.get("elements", [])
 
 
+def libre(el):
+    """Image libre : adresse directe, ou fichier Wikimedia à résoudre par outils/images.py (GitHub Actions)."""
+    return bool(el.get("url") or el.get("commons") or el.get("commons_recherche"))
+
+
 def visuels(a):
     return sum(1 for b in a.get("blocs", []) if b.get("type") in ("image", "carte", "duo", "schema", "barres")) \
         + (1 if a.get("couverture") else 0)
@@ -241,13 +248,13 @@ def controler(ed):
         if illustrables and len(illustres) / len(illustrables) < ILLUSTRES:
             sans = ", ".join(a["etiquette"] for a in illustrables if not visuels(a))
             manques.append(f"{nom} : {len(illustres)}/{len(illustrables)} articles illustrés, 70 % attendus (sans : {sans})")
-        externes = [el for a in arts for el in blocs_images(a) if el.get("url")] + ([r["une"]["image"]] if (r.get("une") or {}).get("image") else [])
+        externes = [el for a in arts for el in blocs_images(a) if libre(el)] + ([r["une"]["image"]] if (r.get("une") or {}).get("image") else [])
         if len(externes) < 2:
             manques.append(f"{nom} : {len(externes)} image(s) Wikimedia ou Our World in Data, 2 au moins (les schémas, barres et mini-cartes ne comptent pas)")
         for a in arts:
             if a["etiquette"].lower().startswith("portrait") and not any(el.get("nature") in ("portrait", "logo") for el in blocs_images(a)):
                 manques.append(f"{nom} : le Portrait n'a ni portrait ni logo")
-            if a["format"] == "dossier" and a.get("couverture") and not a["couverture"].get("url"):
+            if a["format"] == "dossier" and a.get("couverture") and not libre(a["couverture"]):
                 manques.append(f"{nom} : couverture de dossier en mini-carte ; une photo ou un graphique attendu : {a['titre']}")
         for a in arts:
             m = mots_corps(a)
@@ -333,10 +340,10 @@ def dessiner(ed, dossier):
                         compresser(cible)
                     el["type"] = el.get("type") or "carte"
                     el["src"] = f"{rel}/{nom}"
-                elif not el.get("url"):
-                    erreur(f"image sans url : {el.get('legende', '')[:60]} (« {a['titre']} »)")
+                elif not libre(el):
+                    erreur(f"image sans url ni commons : {el.get('legende', '')[:60]} (« {a['titre']} »)")
         u = (r.get("une") or {}).get("image")
-        if u and not u.get("url"):
+        if u and not libre(u):
             erreur(f"image de l'une sans url ({r['id']})")
 
 

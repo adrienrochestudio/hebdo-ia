@@ -93,6 +93,7 @@ function genre(element) {
 }
 
 function figure(element, classe) {
+  if (!element.src && !element.url) return document.createComment("image en attente"); // fichier Commons pas encore résolu
   const f = el("figure", [genre(element), classe].filter(Boolean).join(" "));
   const img = image(element);
   img.addEventListener("error", () => f.remove(), { once: true });
@@ -192,7 +193,7 @@ function dossier(a, id, cle, options, nom) {
   s.id = id;
   const d = el("details", "dossier");
   const resume = el("summary");
-  if (a.couverture) {
+  if (a.couverture && (a.couverture.src || a.couverture.url)) {
     const c = image(a.couverture, { zoom: false });
     c.className = a.couverture.type === "carte" || a.couverture.ville ? "couverture couverture-carte" : "couverture";
     c.alt = "";

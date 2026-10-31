@@ -1,0 +1,32 @@
+name: Images
+# Le réseau de la tâche planifiée n'atteint pas Wikimedia Commons : après chaque publication, ce workflow
+# résout les images "commons" (adresse et crédit), vérifie les autres et retire celles qui n'existent pas.
+on:
+  push:
+    branches: [main]
+    paths: ["editions/*/edition.json"]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: images
+  cancel-in-progress: false
+jobs:
+  images:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Résoudre et vérifier les images
+        run: |
+          fichiers=$(git diff --name-only HEAD~1 HEAD -- 'editions/*/edition.json' 2>/dev/null || true)
+          [ -z "$fichiers" ] && fichiers=$(ls editions/*/edition.json | tail -1)
+          python3 outils/images.py $fichiers
+      - name: Enregistrer
+        run: |
+          git diff --quiet && exit 0
+          git -c user.name="Hebdo IA" -c user.email="adrien.etks@gmail.com" commit -qam "Images résolues"
+          git pull -q --rebase origin main
+          git push -q origin HEAD:main
