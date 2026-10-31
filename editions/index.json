@@ -1,1 +1,12 @@
-[]
+[
+ {
+  "date": "2026-10-31",
+  "numero": 1,
+  "semaine_texte": "Semaine du 25 au 31 octobre 2026",
+  "titres": {
+   "actualite": "Les géants de l'IA financent leurs data centers à crédit",
+   "environnement": "En Europe, le raccordement électrique décide où s'installent les data centers",
+   "technique": "La tokenisation, ou pourquoi une même phrase coûte plus cher en birman qu'en anglais"
+  }
+ }
+]
