@@ -1,0 +1,208 @@
+Veille du 01/11/2026 12h46 (heure de Paris), 168 dernières heures
+
+## Actualité
+[1] VIDEO Au Texas, le projet de construction du plus grand data center au monde qui divise le camp de Trump · Le Monde · 01/11 11h00
+[2] La Bourse de New York saisie d’effroi, à la veille de Halloween · Le Monde · 31/10 03h17
+[3] Le Royaume-Uni ouvre une enquête sur les nouvelles conditions commerciales de Meta pour l’utilisation des contenus de médias, qui pourraient · Le Monde · 30/10 15h28
+[4] Après Google, Amazon pris entre la progression de l’IA et la déception sur ses métiers traditionnels · Le Monde · 30/10 03h00
+[5] « Maintenir la lisibilité du raisonnement des IA devient un nouvel enjeu dans le secteur » · Le Monde · 29/10 17h00
+[6] Conscience artificielle : si l’IA devient sentiente, saurons-nous reconnaître ses droits ? · Le Monde · 29/10 11h30
+[7] Google frappé par la révolution IA que la firme a engendrée · Le Monde · 29/10 05h15
+[8] Thélyson Orélien écarté de la liste des finalistes du prix Renaudot · Le Monde · 29/10 02h52
+[9] Flock : Parcours SAW · Next · 31/10 13h37
+[10] Data centers : la souveraineté européenne grâce à des travailleurs immigrés surexploités · Next · 30/10 17h25
+[11] ☕️ Windows 11 a son nouveau menu contextuel et oui, il est « rapide » · Next · 30/10 17h20
+[12] Intel, Amazon, Google : Wall Street fait les comptes de l’IA, et ils ne sont pas bons · Next · 30/10 17h03
+[13] Danger autour d’une extension Claude Code vérolée dans la boutique de Cursor · Next · 30/10 16h45
+[14] Le Parti socialiste a fait passer sa taxe au gigaoctet à l’Assemblée nationale · Next · 30/10 16h26
+[15] [MàJ] Chez Proton, le rouleau compresseur de l’IA écrase tout · Next · 30/10 12h02
+[16] Polymarket piratée : les comptes de certains utilisateurs ont pu être vidés · Next · 30/10 10h53
+[17] Taxis autonomes : Waymo va mettre des Toyota bZ4X sur les routes japonaises dès l’année prochaine · L'Usine Digitale · 30/10 19h15
+[18] Google Cloud décolle, mais l’intégration de l’IA générative dans la recherche fait vaciller le modèle économique de Google · L'Usine Digitale · 30/10 17h40
+[19] BlackLine choisit le cloud de S3NS pour héberger ses logiciels financiers en France, avec Thales comme premier client · L'Usine Digitale · 30/10 16h44
+[20] Amazon mise toujours plus sur l’IA, AWS signe sa plus forte croissance depuis près de cinq ans · L'Usine Digitale · 30/10 16h01
+[21] I built an AI Tamagotchi before Meta could · The Verge AI · 31/10 17h05
+[22] Apple Intelligence is finally coming to China with iOS 27.3 · The Verge AI · 30/10 23h32
+[23] Sam Altman says it’s better for RAM to be in a data center than on your desk · The Verge AI · 30/10 21h48
+[24] The biggest names in AI are backing a new way to opt out of scraping · The Verge AI · 30/10 21h26
+[25] Google’s satellite AI server transmits its first response to Earth · The Verge AI · 30/10 19h21
+[26] Starbucks wants to use AI to show you a ‘personalized digital menu’ at the drive-thru · The Verge AI · 30/10 18h38
+[27] Pope Leo calls for the disarmament of AI: ‘Machines are tools, not persons’ · The Verge AI · 30/10 15h58
+[28] Silicon Valley wants you to invest in miracles · The Verge AI · 30/10 14h11
+[29] We urgently need to monitor AI agents’ actions in real time · MIT Technology Review · 29/10 11h11
+[30] Creating AI value with enterprise context · MIT Technology Review · 28/10 21h32
+[31] Pairing industrial AI autonomy and human control · MIT Technology Review · 28/10 13h00
+[32] Industrial Intelligence: The next growth opportunity for manufacturing · MIT Technology Review · 27/10 12h19
+[33] Will the real Anthropic please stand up · MIT Technology Review · 26/10 18h45
+[34] The focus on AI safety disasters ignores everyday harms · MIT Technology Review · 26/10 10h01
+[35] Supersonic airliner in doubt as company shifts to powering AI data centers · Ars Technica AI · 30/10 22h41
+[36] Anthropic VS code extension on Cursor backdoored for nearly 12 hours · Ars Technica AI · 30/10 22h09
+[37] Dartmouth's provost warned us about AI cheating—but his own AI use cost him his job · Ars Technica AI · 30/10 21h40
+[38] Basically no one is using AI agents for their DoorDash orders · Ars Technica AI · 30/10 20h30
+[39] Fujifilm to boost tape production 5x as AI fuels archiving demand · Ars Technica AI · 30/10 18h38
+[40] Thousands of “ghost students” use AI to steal millions in student loans, DOJ says · Ars Technica AI · 30/10 17h53
+[41] Trump declares robot imports a national security threat · Ars Technica AI · 29/10 20h07
+[42] Google admits AI search makes less money, but it's fixing that with more ads · Ars Technica AI · 29/10 17h24
+[43] Apple CEO says the company doesn’t ‘want to ship AI for AI’s sake’ · TechCrunch AI · 31/10 22h41
+[44] 4 days left: How TechCrunch Founder Summit helps you make more useful connections to scale · TechCrunch AI · 31/10 22h36
+[45] Judge allows NAACP lawsuit over xAI data center pollution to move forward · TechCrunch AI · 31/10 22h17
+[46] OpenAI reportedly lowers funding target for new round · TechCrunch AI · 31/10 17h12
+[47] Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia · TechCrunch AI · 31/10 02h20
+[48] Ollie, a privacy-focused AI assistant, is shutting down · TechCrunch AI · 30/10 23h56
+[49] Intel’s stock crashes, knocking $12B from government’s stake · TechCrunch AI · 30/10 22h54
+[50] Anthropic expected to receive high ‘junk’ rating from credit agencies following IPO, FT report says · TechCrunch AI · 30/10 22h52
+[51] Google wants video AI to understand what people need as they work · The Decoder · 01/11 12h25
+[52] OpenAI's upcoming chat-and-work merger in ChatGPT signals the end of all-you-can-prompt pricing · The Decoder · 01/11 10h51
+[53] Anthropic's watermark rollout leaves a loophole on two older Claude models · The Decoder · 31/10 20h20
+[54] OpenAI plans to train models on Daybreak Blue cybersecurity session data that was previously off-limits · The Decoder · 31/10 17h38
+[55] Beekeeping tips and wrestling advice can train AI models to sabotage oversight · The Decoder · 31/10 16h06
+[56] Microsoft offers a quarter of its workforce voluntary severance while shielding AI-critical teams · The Decoder · 31/10 11h43
+[57] Google Deepmind creates a global map of forests with satellite data and AI · The Decoder · 31/10 11h15
+[58] OpenAI raises just $11 billion of its $30 billion target as big investors lose their AI appetite · The Decoder · 31/10 10h22
+[59] Why Africa needs its own AI off switch · Rest of World · 29/10 11h00
+[60] AI models cost more when you don’t use English · Rest of World · 26/10 11h00
+
+## Laboratoires
+[61] Making it easier for websites to express AI training preferences · OpenAI · 30/10 10h30
+[62] Community safety report and new protections for teens · OpenAI · 30/10 10h00
+[63] Fair use benefits everyone · OpenAI · 30/10 01h00
+[64] An updated Model Spec for more capable and beneficial AI · OpenAI · 29/10 18h00
+[65] How we detect frontier model misalignment · OpenAI · 29/10 10h00
+[66] How Ropes & Gray is developing AI for transactional diligence · OpenAI · 29/10 08h00
+[67] Credit Saison achieves 954% ROI in a ChatGPT Enterprise pilot · OpenAI · 29/10 01h00
+[68] OpenAI and ServiceNow expand partnership across enterprise workflows · OpenAI · 28/10 14h15
+[69] Le Chonk: Built for Coders, Trusted by Defenders. · Mistral AI · 29/10 13h00
+[70] Our newest AI Quest: Mapping the human brain · Google AI · 26/10 17h00
+[71] nemotron-halloween · Hugging Face · 30/10 18h57
+[72] Granite Switch 4.1.1 — Update models like you update software · Hugging Face · 29/10 14h37
+[73] Announcing Project ProtoStar: Making Publicly Funded Science AI-Ready · Hugging Face · 29/10 01h00
+[74] Welcome Le Chonk: Mistral Large 4 on Hugging Face · Hugging Face · 29/10 01h00
+[75] Introducing AnySpeechRecognizer and AnyDecisionModel: Open Models for Speech and Decisions on Apple Platforms · Hugging Face · 29/10 01h00
+[76] Build specialized multimodal models with LFM3 · Hugging Face · 27/10 18h16
+[77] Can we trust LLMs to judge whether a research idea is novel? · Hugging Face · 27/10 17h12
+[78] Things That Go Beep in the Night: Agentic AI Joins the Search for Extraterrestrial Signals · NVIDIA · 30/10 16h00
+[79] Into the Omniverse: How Developers Turn Ideas Into Simulations With Frontier AI Agents · NVIDIA · 29/10 17h00
+[80] Thin, Light and Built for Everything: NVIDIA RTX Spark Windows Laptops Gain New Models, Agent Tools and Games · NVIDIA · 28/10 16h00
+[81] How AI Is Changing the Pace of Discovery for Millions Living With Dementia · NVIDIA · 27/10 16h00
+
+## Chine et Asie
+[82] DeepSeek unveils AI ‘super agent’ in coding race with OpenAI, Anthropic · SCMP Tech · 01/11 11h00
+[83] US or China? Why Kazakhstan refuses to pick sides as it eyes AI revolution · SCMP Tech · 01/11 07h00
+[84] SI is the future of AI – just not in the way Trump thinks · SCMP Tech · 31/10 13h30
+[85] As AI cyber risks grow, Chinese chip expert urges shared ethics standards with US rivals · SCMP Tech · 31/10 06h00
+[86] AI, fuelled by advanced chips, set to power semiconductor manufacturing: industry veteran · SCMP Tech · 30/10 13h59
+[87] China dismisses US report of suspected spy targeting Nvidia CEO Jensen Huang as ‘groundless’ · SCMP Tech · 30/10 11h30
+[88] China’s optical suppliers extend sell-off as fears of slower AI growth trump upbeat earnings · SCMP Tech · 30/10 05h27
+[89] Chinese AI chipmaker Iluvatar CoreX says new GPU matches Nvidia’s H200 as chip gap closes · SCMP Tech · 29/10 15h00
+[90] Noetix’s RMB9,998 Humanoid Is Just the Start · TechNode · 30/10 10h00
+[91] How Bambu Lab Turned 3D Printing Into a Consumer Hit · TechNode · 30/10 08h51
+[92] AI inference chip startup Nano-core Chip raises over RMB 1 billion in Series C2 funding · TechNode · 30/10 06h46
+[93] Former Xiaomi executive launches smart ring and AI-powered sleep system · TechNode · 30/10 06h46
+[94] Kai-Fu Lee’s 01.AI secures Hangzhou state investment worth hundreds of millions of RMB · TechNode · 30/10 06h46
+[95] Xpeng launches MONA L05 SUV with electric and extended-range versions · TechNode · 30/10 06h46
+[96] Xiaomi to invest RMB 1.7 billion in EV battery maker Sunwoda Mobility · TechNode · 30/10 06h46
+[97] Genshin Impact developer sets December 4 launch for life simulation game Petit Planet · TechNode · 30/10 06h46
+[98] Huawei Qiankun ADS Passes 17.3 Billion Kilometers of Cumulative Assisted Driving · Pandaily · 01/11 07h50
+[99] AI Agents Now Create Over 20,000 Tencent Cloud TDSQL-C Databases a Day, Up More Than 80x · Pandaily · 01/11 07h50
+[100] CXMT Answers Micron's Case Against 4F² DRAM, Says First 4F² Samples Ship by Year-End · Pandaily · 01/11 07h50
+[101] SenseTime Open-Sources SenseNova-Loop-9B-Preview, a Looped Model That Runs Its Middle Layers Twice · Pandaily · 01/11 02h52
+[102] Westlake University Opens a World Model Research Center Led by Yu Kaicheng · Pandaily · 01/11 02h51
+[103] Peking University Team Ports DFT Software ABACUS to Huawei Kunpeng 920, Reports Up to 10.7x Speedups · Pandaily · 01/11 02h50
+[104] DeepSeek Harness Team Open-Sources a Super-agent Prototype That Finds and Fixes Bugs on Its Own · Pandaily · 01/11 02h49
+[105] How China's AI Labs Are Chasing Recursive Self-Improvement Without Touching Model Weights · Pandaily · 31/10 08h19
+
+## Europe
+[106] Howler will have AI answer your questions, then burn the chat · The Register AI · 29/10 21h04
+[107] Ex-EQT investor Doreen Huber joins Interface Capital with eye for cyber deals amid ‘extremely scary’ AI agent boom · Sifted · 30/10 11h45
+[108] Talent tops European AI startups’ concerns as funding pressures mount · Sifted · 30/10 06h00
+[109] Why Creandum and USV co-led a $40m seed into Machenta, a robotics lab with no product · Sifted · 30/10 06h00
+[110] Bots bouncers: the startups deciding what AI agents can do · Sifted · 30/10 06h00
+[111] The French robotics startup promising to deploy industrial humanoids after just 20 minutes of training · Sifted · 29/10 06h00
+[112] How to outcompete the ‘warp speed’ AI labs on hiring · Sifted · 29/10 06h00
+[113] Why the smartest AI models still need human context · Sifted · 28/10 12h06
+[114] How to fund your robotics company: not another fundraise · Sifted · 28/10 06h00
+
+## Marchés et financements
+[115] The Week’s 10 Biggest Funding Rounds: Physical AI And Predictions Lead The Lineup · Crunchbase News AI · 30/10 17h33
+[116] Crunchbase Data Shows Q3 Robotics Startup Funding Jumps 185% As US And China Lead Physical AI Push · Crunchbase News AI · 27/10 12h00
+[117] Your AI Agents Need A Chief Operating Officer, Too · Crunchbase News AI · 27/10 12h00
+[118] Some Observations About Anthropic’s IPO Filing · Crunchbase News AI · 26/10 21h10
+
+## Environnement
+[119] Beyond the grid: the maintenance challenges putting the data center boom at risk · Data Center Dynamics · 01/11 12h00
+[120] Sponsored: One security strategy. Four different data center realities. · Data Center Dynamics · 31/10 17h00
+[121] Europe’s AI ambitions are hitting a power bottleneck · Data Center Dynamics · 31/10 12h00
+[122] Equinix posts record annualized gross bookings of $533m, up 35 percent · Data Center Dynamics · 30/10 18h39
+[123] Data center mooted in Glasgow by Scottish automotive firm · Data Center Dynamics · 30/10 18h38
+[124] Beyond the grid · Data Center Dynamics · 30/10 17h45
+[125] SpiNNcloud rebrands to Sparxity, announces cluster deployment at Jülich center in Germany · Data Center Dynamics · 30/10 17h30
+[126] Modular data center provider DXN loses neocloud customer contract · Data Center Dynamics · 30/10 17h20
+[127] [Industry Event] Advancing Data Center Construction East 2026 · Data Center Knowledge · 01/12 13h00
+[128] Data Center World Middle East · Data Center Knowledge · 17/11 13h00
+[129] Edge AI May Give Telecoms a Seat at the Table · Data Center Knowledge · 30/10 10h00
+[130] The Jobs That Actually Exist Inside Data Centers · Data Center Knowledge · 29/10 19h35
+[131] Nvidia, AMD Commit $4B to Meta AI Buildout · Data Center Knowledge · 29/10 10h00
+[132] Oracle Cloud to Offer Google TPUs and New AI Chips · Data Center Knowledge · 28/10 15h38
+[133] Where Solid-State Micro-Cooling Fits in Data Centers · Data Center Knowledge · 28/10 10h00
+[134] Rethinking the Blind-Mate Connection · Data Center Knowledge · 27/10 21h15
+[135] Accidents graves et cadences infernales : plusieurs chantiers de data centers épinglés à travers l'Europe · Reporterre · 30/10 16h04
+[136] Google abat 400 000 arbres illégalement en Finlande pour des data centers · Reporterre · 26/10 17h23
+[137] Rural Charms Drew Residents to Taylor, Texas. Then Came the Data Centers. · Inside Climate News · 01/11 10h55
+[138] Will Josh Shapiro’s Data Center Past Haunt his Political Future? · Inside Climate News · 01/11 10h50
+[139] Texas Used to Be ‘the Best Place’ to Build Data Centers—But Not Anymore · Inside Climate News · 30/10 20h11
+[140] Would you trust an emergency alert written by AI? · Grist · 28/10 09h30
+[141] Radical AI uses autonomous labs to accelerate alloy discovery · Mining.com · 30/10 21h44
+
+## Technique
+[142] How We Took Over ChatGPT Accounts · Simon Willison · 01/11 00h15
+[143] datasette-llm 0.1a9 · Simon Willison · 31/10 23h10
+[144] dbreunig/nesformer · Simon Willison · 30/10 22h59
+[145] API credits benefit for eligible ChatGPT subscriptions · Simon Willison · 29/10 23h48
+[146] Building a multiplayer game world with autonomous Fable-class models · Simon Willison · 29/10 18h00
+[147] Quoting Ben Hylak · Simon Willison · 29/10 15h06
+[148] Quoting Ted Sanders · Simon Willison · 29/10 00h23
+[149] GitHub Octoverse 2026 · Simon Willison · 28/10 17h45
+[150] Was I wrong about open models & cyber risks? · Interconnects · 30/10 18h36
+[151] Artificial Analysis v5 and the benchmarker's dilemma · Interconnects · 28/10 13h58
+[152] Podcast: Kimi K3.1 Pro, the new cyber reality, and Muse musings · Interconnects · 25/10 12h49
+[153] Consumer Appetite for Personal AI Goes Mainstream · IEEE Spectrum AI · 29/10 20h18
+[154] Systems Thinking Is Vital in the Age of AI · IEEE Spectrum AI · 28/10 19h00
+[155] Your Robot’s Safety Functions Already Work. What If the Input Lies? · IEEE Spectrum AI · 27/10 17h14
+[156] I Used AI to Fake a Scientific Paper. Here’s What Happened · IEEE Spectrum AI · 27/10 14h00
+[157] IEEE Xplore Digital Library Adds AI Assistant · IEEE Spectrum AI · 26/10 19h00
+[158] Poetry for Engineers: Of Code and Shortleaf Pine · IEEE Spectrum AI · 25/10 13h00
+
+## Infrastructure
+[159] AI Arms Race Puts Sovereign Supply Chains in the Spotlight · The Next Platform · 30/10 20h08
+[160] How to Evaluate CPU Performance for Agentic AI · The Next Platform · 29/10 10h00
+[161] Nvidia Simulates Its Way Into Google's Magic State Cultivation Party · The Next Platform · 26/10 14h50
+[162] Cadence, Nvidia Unveil New AI Models To Put EDA On Autopilot · The Next Platform · 26/10 14h00
+[163] NVIDIA Updates Rubin GPU Specs as First Production Hardware Arrives · ServeTheHome · 01/11 04h00
+[164] Intel Q3 2026 Earnings Data Center Soars While PC Faces Memory Pressure · ServeTheHome · 30/10 23h43
+[165] ASRock Industrial AI Box-A395 Review: Taking Strix Halo to Work · ServeTheHome · 29/10 19h00
+[166] ASRock Creator Radeon AI Pro R9700 Review: Workstation Inference, AMD Style · ServeTheHome · 26/10 19h07
+
+## Métiers de l'image
+[167] View Conference Was Inspiring: The AI Sales Pitches Were Exhausting (And Occasionally Bullshit) · Cartoon Brew · 29/10 17h56
+
+## Autres métiers
+[168] What Real AI Adoption Looks Like · Artificial Lawyer · 30/10 09h37
+[169] AI Didn’t Cause the Weil Crisis · Artificial Lawyer · 29/10 11h15
+[170] The 4 Es Inhouse AI Framework – Emily Bull · Artificial Lawyer · 29/10 10h02
+[171] AI Governance Must Keep Pace with Legal Practice · Artificial Lawyer · 29/10 08h40
+[172] Anthropic Increases Legal Vertical Push With ‘Artifacts’ · Artificial Lawyer · 28/10 16h15
+[173] Self-service, AI-enabled payments: Putting corporates in control of exceptions · Finextra · 01/12 16h00
+[174] Building a Trusted Ecosystem: AI’s Changing Role in Corporate Banking · Finextra · 29/10 16h00
+[175] Can Open Source Drive Secure AI Innovation in Banking? · Finextra · 27/10 16h00
+[176] Why Open Banking Needs Sustainable Commercial Model to Scale Payments and AI Services · Finextra · 27/10 12h00
+[177] The New York Times is adding more AI features to its Cooking app, and users aren’t thrilled · Nieman Lab · 28/10 19h51
+[178] STAT+: FDA, CMS scramble to avoid regulatory logjam as more states look to test AI in clinical settings · STAT · 30/10 09h30
+
+## Voix
+[179] LLM use is acknowledged almost as often as specialized AI tools in biology preprints · Epoch AI · 30/10 01h00
+[180] AI can turn security fixes into working exploits before users receive an update · Epoch AI · 29/10 22h40
+[181] New global AI computing capacity is doubling every 9 months · Epoch AI · 29/10 01h00
+[182] Introducing the AI Chip Imports explorer · Epoch AI · 27/10 01h00
+[183] HackerTube · Andrej Karpathy · 31/10 18h00
+
+183 articles, 3 écarté(s) car déjà traités ; flux en échec : Import AI (HTTPError), Gary Marcus (HTTPError), ChinAI (Jeffrey Ding) (HTTPError)
