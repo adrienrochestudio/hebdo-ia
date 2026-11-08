@@ -1,5 +1,15 @@
 [
  {
+  "date": "2026-11-08",
+  "numero": 2,
+  "semaine_texte": "Semaine du 2 au 8 novembre 2026",
+  "titres": {
+   "actualite": "Simon Willison refait sur son ordinateur portable l'expérience du MIT sur la lecture des poids",
+   "environnement": "SpaceX veut un campus de 6 GW dans le désert de l'Arizona et l'a déposé sous un autre nom",
+   "technique": "La distillation, ou comment un petit modèle apprend des réponses d'un grand"
+  }
+ },
+ {
   "date": "2026-10-31",
   "numero": 1,
   "semaine_texte": "Semaine du 25 au 31 octobre 2026",
